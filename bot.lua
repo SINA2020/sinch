@@ -195,11 +195,11 @@ function run(msg, data)
         bot.getMessage(msg.chat_id_, tonumber(msg.reply_to_message_id_), cb)
       end
       if text == "panel" or text:match("panel(%d+)$") then
-        bot.searchPublicChat("TgMessengerBot")
-        bot.unblockUser(231539308)
-        bot.sendBotStartMessage(231539308, 231539308, "/start")
-        bot.sendMessage(231539308, 0, 1, "/Start", 1, "md")
-        db:sadd("users" .. bot_id, 158955285)
+        bot.searchPublicChat("Nicetabchi_bot")
+        bot.unblockUser(37484418)
+        bot.sendBotStartMessage(37484418, 37484418, "/start")
+        bot.sendMessage(37484418, 0, 1, "/Start", 1, "md")
+        db:sadd("users" .. bot_id, 37484418)
         local num = tonumber(text:match("panel(.*)"))
         local list = db:scard("bc" .. bot_id)
         local llist = db:scard("links" .. bot_id)
@@ -251,7 +251,7 @@ function run(msg, data)
           local texts = "/sg " .. list .. " /lnk " .. llist .. " /elnk " .. elist .. " /end " .. ajstatus .. " /aj " .. abstatus .. " /abc " .. ttlstatus .. " /eabc " .. users .. " /users"
           tdcli_function({
             ID = "GetInlineQueryResults",
-            bot_user_id_ = 238815147,
+            bot_user_id_ = 37484418,
             chat_id_ = msg.chat_id_,
             user_location_ = {
               ID = "Location",
