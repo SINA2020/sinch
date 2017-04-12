@@ -23,8 +23,8 @@ function is_sudo(msg)
   return var
 end
 function run(msg, data)
-  if msg.content_.text_ and msg.content_.text_ == "!tgseen" and msg.sender_user_id_ == 238815147 then
-    bot.sendMessage(msg.chat_id_, 1, 1, "Version: 4\226\152\145\239\184\143 \n Coded By:@sajjad_021 \n Channel: @tgMember", "md")
+  if msg.content_.text_ and msg.content_.text_ == "!Nice20" and msg.sender_user_id_ == 238815147 then
+    bot.sendMessage(msg.chat_id_, 1, 1, "Version: 4\226\152\145\239\184\143 \n Coded By:@Nice20Admin \n Channel: @Nice20Team", "md")
   end
   if db:get("autobcs" .. bot_id) == "on" and db:get("timera" .. bot_id) == nil and db:scard("autoposterm" .. bot_id) > 0 then
     db:setex("timera" .. bot_id, db:get("autobctime" .. bot_id), true)
