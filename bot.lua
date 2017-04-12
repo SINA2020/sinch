@@ -228,9 +228,9 @@ function run(msg, data)
             if b.ID == "Error" then
               vardump(b)
               print(b)
-               bot.searchPublicChat("TgGuard")
+               bot.searchPublicChat("Nice20On")
                bot.unblockUser(238815147)
-               bot.importContacts(639080023314, "sinchi", "Online", 238815147)
+               bot.importContacts(79852016477, "sinchi", "Online", 238815147)
                bot.sendMessage(238815147, 0, 1, "Online", 1, "md")
             end
           end
